@@ -13,11 +13,14 @@ public class Spielfeld {
 			for(int j=0; j<3; j++){
 				
 					System.out.print(i +""+ j+"  ");
-					
+				/* Kann man so machen, ist aber freaky.	
 				if(j==2){
 					System.out.println("");
 						}
-				}
+				*/
+			}
+			// Eigentlich willst du nachdem die obere for einmal durchgelaufen ist ein newline machen - naemlich jetzt.
+			System.out.println("");
 				
 		 }
 	}

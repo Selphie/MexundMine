@@ -5,8 +5,11 @@ public class Spielkarte {
 	int wertUnten;
 	int wertLinks;
 	int wertRechts;
+	String besitzer;
 
 	public static void main(String[] args){
+		Spielkarte karte1 = new Spielkarte(1,2,3,4,FranzGans);
+		//System.out.println(karte1);
 		//System.out.println("   "+karte[0][1]+"\n"+karte[1][0]+"     "+karte[1][2]+"\n"+"   "+karte[2][1]);
 	}
 
@@ -22,17 +25,33 @@ public class Spielkarte {
 	public int getwertRechts(){
 		return wertRechts;
 	}
+	public String getbesitzer(){
+		return besitzer;
+	}
 
 	public void setwertOben(int x){
-		wertOben = x;
+		this.wertOben = x;
 	}
 	public void setwertUnten(int x){
-		wertUnten = x;
+		this.wertUnten = x;
 	}
 	public void setwertLinks(int x){
-		wertLinks = x;
+		this.wertLinks = x;
 	}
 	public void setwertRechts(int x){
-		wertRechts = x;
+		this.wertRechts = x;
+	}
+	public void setbesitzer(String y){
+		this.besitzer = y;
+	}
+	
+	public Spielkarte(int wertOben, int wertUnten, int wertLinks, int wertRechts, String besitzer){
+		
+		this.wertOben = wertOben;
+		this.wertUnten = wertUnten;
+		this.wertLinks = wertLinks;
+		this.wertRechts = wertRechts;
+		this.besitzer = besitzer;
+	
 	}
 }

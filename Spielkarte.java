@@ -8,9 +8,7 @@ public class Spielkarte {
 	String besitzer;
 
 	public static void main(String[] args){
-		Spielkarte karte1 = new Spielkarte(1,2,3,4,FranzGans);
-		//System.out.println(karte1);
-		//System.out.println("   "+karte[0][1]+"\n"+karte[1][0]+"     "+karte[1][2]+"\n"+"   "+karte[2][1]);
+		//System.out.println("   "+karte1.wertoben[0][1]+"\n"+karte[1][0]+"     "+karte[1][2]+"\n"+"   "+karte[2][1]);
 	}
 
 	public int getwertOben(){
@@ -29,6 +27,7 @@ public class Spielkarte {
 		return besitzer;
 	}
 
+	
 	public void setwertOben(int x){
 		this.wertOben = x;
 	}

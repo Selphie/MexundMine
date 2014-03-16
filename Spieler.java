@@ -19,12 +19,17 @@ public class Spieler {
 			System.out.println("");
 		}
 			}
-	public static void main(String[] args)
+	/*public static void main(String[] args)
 	{
 		Spielkarte a = new Spielkarte(1,2,3,4,"Spieler1");
 		Spielkarte b = new Spielkarte(2,3,4,5,"Spieler1");
 		Spielkarte[] kartenliste1 = {a,b};
 		Spieler Spieler1 = new Spieler("mark", kartenliste1);
 		Spieler1.kartenwerteausgabe();
+	}*/
+	public static void main(String[] args){
+	//	Spielkarte[] kartenliste1 = Kartenliste.kartenlistex;
+	//	Spieler Spieler1 = new Spieler("mark", kartenliste1);
+	//	Spieler1.kartenwerteausgabe();
 	}
 }

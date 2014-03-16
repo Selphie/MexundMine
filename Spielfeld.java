@@ -1,11 +1,9 @@
 
 public class Spielfeld {
-
 	public static void main (String[] args){
 
 		// Spielfeld initialisieren
 		int[][] feld = new int[3][3];
-
 		// Durch das Spielfeld iterieren
 		for(int i = 0; i<3; i++)
 		{
@@ -16,8 +14,8 @@ public class Spielfeld {
 			}
 			// Springe aus j-forschleife raus und mache einen Zeilenumbruch
 			System.out.println("");
-
-		}
+				
+		 }
 	}
 }
 

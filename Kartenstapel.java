@@ -1,26 +1,24 @@
+import java.util.Vector;
 
 public class Kartenstapel {
 
-	private Spielkarte[] kartenArrayx;
-	public Kartenstapel(Spielkarte[] kartenArrayx){
-		this.kartenArrayx = kartenArrayx;
+	private Vector <Spielkarte> kartenpool = new Vector<Spielkarte>();
+
+	public Kartenstapel(){	
+		kartenpool.add(Spielkarte.Heulechse);
+		kartenpool.add(Spielkarte.FongoOngo);
+		kartenpool.add(Spielkarte.Beisskaefer);
+		kartenpool.add(Spielkarte.Purpurmaus);
+		kartenpool.add(Spielkarte.Prinula);
+		kartenpool.add(Spielkarte.Geira);
+		kartenpool.add(Spielkarte.Gesper);
 	}
-	//diese Sachen muessen spaeter in die große Main
-	public static void main(String[] args){
-		Spielkarte[] kartenArray1 = {Spielkarte.Heulechse,Spielkarte.FongoOngo};
-		Kartenstapel kartenstapelx = new Kartenstapel(kartenArray1);
-		Spielkarte[] kartenArray2 = {Spielkarte.Heulechse,Spielkarte.FongoOngo};
-		Kartenstapel kartenstapely = new Kartenstapel(kartenArray2);
+
+	public Spielkarte popRandomKarte()
+	{
+		int r = (int)(Math.random()*kartenpool.size());
+		return kartenpool.remove(r);	
 	}
-	//braucht man vermutlich spaeter nichtmehr, weil Kartenstapel nicht ausgegeben werden soll
-	/*public void kartenstapelausgabe(){
-		for(int i = 0; i<kartenArrayx.length;i++){
-			//System.out.println(kartenliste[i]); gibt ID aus
-			System.out.println("   "+kartenArrayx[i].getwertOben()+"\n"+kartenArrayx[i].getwertUnten()+"  "+"  "+kartenArrayx[i].getwertLinks()+"\n"+"   "+kartenArrayx[i].getwertRechts());
-			System.out.println("");
-		}
-	*/
 
 
 }
-	

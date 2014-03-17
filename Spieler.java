@@ -1,3 +1,5 @@
+import java.util.Vector;
+
 
 public class Spieler {
 
@@ -28,6 +30,11 @@ public class Spieler {
 		Spieler1.kartenwerteausgabe();
 	}*/
 	public static void main(String[] args){
+		int r = (int) (Math.random() * 7);
+		Kartenstapel k = new Kartenstapel(null);
+		Vector<Spielkarte> v = new Vector<Spielkarte>();
+		
+		System.out.println(r);
 	//	Spielkarte[] kartenliste1 = Kartenliste.kartenlistex;
 	//	Spieler Spieler1 = new Spieler("mark", kartenliste1);
 	//	Spieler1.kartenwerteausgabe();

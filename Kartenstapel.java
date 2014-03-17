@@ -1,29 +1,26 @@
 
 public class Kartenstapel {
 
-	static Spielkarte[] kartenstapelx;
-	public Kartenstapel(Spielkarte[] kartenstapelx){
-		this.kartenstapelx = kartenstapelx;
+	private Spielkarte[] kartenArrayx;
+	public Kartenstapel(Spielkarte[] kartenArrayx){
+		this.kartenArrayx = kartenArrayx;
 	}
+	//diese Sachen muessen spaeter in die große Main
 	public static void main(String[] args){
-		Spielkarte[] kartenstapel1 = {Spielkarte.Heulechse,Spielkarte.FongoOngo};
-		Kartenstapel kartenstapelx = new Kartenstapel(kartenstapel1);
-		kartenstapelx.kartenstapelausgabe();
+		Spielkarte[] kartenArray1 = {Spielkarte.Heulechse,Spielkarte.FongoOngo};
+		Kartenstapel kartenstapelx = new Kartenstapel(kartenArray1);
+		Spielkarte[] kartenArray2 = {Spielkarte.Heulechse,Spielkarte.FongoOngo};
+		Kartenstapel kartenstapely = new Kartenstapel(kartenArray2);
 	}
-	public void kartenstapelausgabe(){
-		for(int i = 0; i<kartenstapelx.length;i++){
+	//braucht man vermutlich spaeter nichtmehr, weil Kartenstapel nicht ausgegeben werden soll
+	/*public void kartenstapelausgabe(){
+		for(int i = 0; i<kartenArrayx.length;i++){
 			//System.out.println(kartenliste[i]); gibt ID aus
-			System.out.println("   "+kartenstapelx[i].getwertOben()+"\n"+kartenstapelx[i].getwertUnten()+"  "+"  "+kartenstapelx[i].getwertLinks()+"\n"+"   "+kartenstapelx[i].getwertRechts());
+			System.out.println("   "+kartenArrayx[i].getwertOben()+"\n"+kartenArrayx[i].getwertUnten()+"  "+"  "+kartenArrayx[i].getwertLinks()+"\n"+"   "+kartenArrayx[i].getwertRechts());
 			System.out.println("");
 		}
+	*/
 
 
-	}
-	/*public Spielkarte[] getkartenstapel(){
-		return kartenstapelx;
-	}
-	public void setkartenstapel(Spielkarte[] kartenstapelx){
-		this.kartenstapelx = kartenstapelx;
-	}*/
-	
 }
+	
